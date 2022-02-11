@@ -118,12 +118,12 @@ In the second set of analyses, the dependent measure was the change in the norma
 
 
 ```{r}
-study1 %>% filter(order=='First-order') %>% 
-  select(PROLIFIC_PID, type, resp, resp2, issue) %>% 
-  pivot_wider(id_cols = c(PROLIFIC_PID, issue), 
-              names_from = type,
-              values_from = c('resp', 'resp2')) %>% 
-  select(3:6) %>% cor(use='pairwise.complete.obs') %>% round(2)
+# study1 %>% filter(order=='First-order') %>% 
+#   select(PROLIFIC_PID, type, resp, resp2, issue) %>% 
+#   pivot_wider(id_cols = c(PROLIFIC_PID, issue), 
+#               names_from = type,
+#               values_from = c('resp', 'resp2')) %>% 
+#   select(3:6) %>% cor(use='pairwise.complete.obs') %>% round(2)
 ```
 
 
@@ -145,6 +145,6 @@ fig_rat
 
 ### Results
 
-We conducted a series of analyses analogical to that from Study 1a. So, first, we fitted a series of mixed-effect models with the difference between normalized assessments of factual statement in the second and first series as the dependent measure and random effects of participant's id and issue. An intercept-only model revealed a non-significant negative intercept ($\beta$ = `r round(summ(m1_rat_0)$coeftable[1], 2)`, *t*(`r summ(m1_rat_0)$coeftable[4]`) = `r round(summ(m1_rat_0)$coeftable[3],2)`, *p* = `r round(summ(m1_rat_0)$coeftable[5], 2)`) and the mode's fit wasn't improved by adding the effect of target issue ($\chi^2$(`r anova(m1_rat_0, m1_rat_1)$Df[2]`) = `r round(anova(m1_rat_0, m1_rat_1)$Chisq[2], 2)`), *p* = `r round(anova(m1_rat_0, m1_rat_1)$'Pr(>Chisq)'[2], 3)`), meaning that we didn't observe evidence that thinking about the normative dimension of one issue would lead to a consistent shift in factual beliefs on all 7 issues, nor a shift in specific factual beliefs on the target issue. 
+We conducted a series of analyses analogical to that from Study 1a. So, first, we fitted a series of mixed-effect models with the difference between normalized assessments of factual statement in the second and first series as the dependent measure and random effects of participant's id and issue. An intercept-only model revealed a non-significant negative intercept ($\beta$ = `r round(summ(m1_rat_0)$coeftable[1], 2)`, *t*(`r round(summ(m1_rat_0)$coeftable[4], 0)`) = `r round(summ(m1_rat_0)$coeftable[3],2)`, *p* = `r round(summ(m1_rat_0)$coeftable[5], 2)`) and the mode's fit wasn't improved by adding the effect of target issue ($\chi^2$(`r anova(m1_rat_0, m1_rat_1)$Df[2]`) = `r round(anova(m1_rat_0, m1_rat_1)$Chisq[2], 2)`), *p* = `r round(anova(m1_rat_0, m1_rat_1)$'Pr(>Chisq)'[2], 3)`), meaning that we didn't observe evidence that thinking about the normative dimension of one issue would lead to a consistent shift in factual beliefs on all 7 issues, nor a shift in specific factual beliefs on the target issue. 
 
 In the second set of analyses, the dependent measure was the change in the normalized distance from the median. The intercept-only model suggests an overall moderating effect of thinking about the normative dimension of one issue on factual beliefs on all 7 issues ($\beta$ = `r round(summ(m1_rat_2)$coeftable[1], 2)`, *t*(`r round(summ(m1_rat_2)$coeftable[4], 0)`) = `r round(summ(m1_rat_2)$coeftable[3],2)`, *p* = `r round(summ(m1_rat_2)$coeftable[5], 2)`). As adding the effect of reflection didn't improve the model's fit ($\chi^2$(`r anova(m1_rat_2, m1_rat_3)$Df[2]`) = `r round(anova(m1_rat_2, m1_rat_3)$Chisq[2], 2)`), *p* = `r round(anova(m1_rat_2, m1_rat_3)$'Pr(>Chisq)'[2], 2)`), the moderating effect of reflection doesn't seem to be enhanced by focusing on the target issue.
