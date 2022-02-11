@@ -666,12 +666,6 @@ effect of reflection didn’t improve the model’s fit (*χ*<sup>2</sup>(1)
 = 0.2), *p* = 0.66), the putative moderating effect of reflection
 doesn’t seem to be enhanced by focusing on the target issue.
 
-    ##                 resp_Factual resp_Normative resp2_Factual resp2_Normative
-    ## resp_Factual            1.00             NA          0.83              NA
-    ## resp_Normative            NA           1.00            NA            0.82
-    ## resp2_Factual           0.83             NA          1.00              NA
-    ## resp2_Normative           NA           0.82            NA            1.00
-
 ## Study 1b: Rationalization
 
 144 U.K. nationals recruited on Prolific completed both parts of the
@@ -687,11 +681,11 @@ first, we fitted a series of mixed-effect models with the difference
 between normalized assessments of factual statement in the second and
 first series as the dependent measure and random effects of
 participant’s id and issue. An intercept-only model revealed a
-non-significant negative intercept (*β* = -0.03, *t*(6.0885046) = -1.39,
-*p* = 0.21) and the mode’s fit wasn’t improved by adding the effect of
-target issue (*χ*<sup>2</sup>(1) = 0.44), *p* = 0.508), meaning that we
-didn’t observe evidence that thinking about the normative dimension of
-one issue would lead to a consistent shift in factual beliefs on all 7
+non-significant negative intercept (*β* = -0.03, *t*(6) = -1.39, *p* =
+0.21) and the mode’s fit wasn’t improved by adding the effect of target
+issue (*χ*<sup>2</sup>(1) = 0.44), *p* = 0.508), meaning that we didn’t
+observe evidence that thinking about the normative dimension of one
+issue would lead to a consistent shift in factual beliefs on all 7
 issues, nor a shift in specific factual beliefs on the target issue.
 
 In the second set of analyses, the dependent measure was the change in
