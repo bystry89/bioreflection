@@ -26,7 +26,7 @@ pretest <- read.csv('data/00_long_data.csv')
   
   tbl$`Shapiro-Wilk test` <- apply(tbl,1, function(x) {
     selected %>% filter(issue==x[1], type==x[2]) %>% .$resp %>% 
-      shapiro.test() %>% .$statistic %>% round(2)
+      shapiro.test() %>% .$p.value %>% round(2)
   })
   
   tbl$`Correlation with politics` <- apply(tbl,1, function(x) {

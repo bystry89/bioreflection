@@ -29,3 +29,43 @@ pretest %>% filter(grepl(paste(selected_keys,collapse="|"), .$key)) %>%
   spread(type, resp) %>% 
   group_by(issue) %>%
   dplyr::summarise(cor=cor(Factual, Normative, use="pairwise.complete.obs"))
+
+# recode factual statements that negatively correlate with the factual ones
+
+pretest <- pretest %>% mutate(
+  resp = if_else(str_detect(key, "ab_f|gm_f|sa_f"),
+                 abs(100-as.numeric(resp)), as.numeric(resp)))
+
+# reliability
+reliability <- pretest %>% 
+  filter(type=='Normative', grepl(paste(selected_keys,collapse="|"), .$key)) %>% 
+  select(PROLIFIC_PID, resp, issue) %>% 
+  pivot_wider(names_from = issue, values_from = resp, id_cols = PROLIFIC_PID) %>% 
+  select(-PROLIFIC_PID) %>% 
+  psych::alpha()
+
+
+# FA
+#EFA--factual
+fact <- pretest %>% filter(type=='Factual', grepl(paste(selected_keys,collapse="|"), .$key)) %>% 
+  select(issue, resp, PROLIFIC_PID) %>% 
+  pivot_wider(id_cols = PROLIFIC_PID, names_from = issue, values_from = resp) %>% 
+  select(-PROLIFIC_PID) 
+fact%>% psych::fa.parallel()
+
+fact2_EFA <- psych::fa(fact, nfactors = 2, rotate='oblimin')
+fact2_EFA$loadings
+fact2_EFA$e.values
+fact2_EFA$score.cor
+
+#EFA--normative
+norm <- pretest %>% filter(type=='Normative', grepl(paste(selected_keys,collapse="|"), .$key)) %>% 
+  select(issue, resp, PROLIFIC_PID) %>% 
+  pivot_wider(id_cols = PROLIFIC_PID, names_from = issue, values_from = resp) %>% 
+  select(-PROLIFIC_PID) 
+norm%>% psych::fa.parallel()
+
+norm2_EFA <- psych::fa(norm, nfactors = 1, rotate='oblimin')
+norm2_EFA$loadings
+norm2_EFA$e.values
+norm2_EFA$score.cor

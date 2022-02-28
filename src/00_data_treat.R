@@ -38,7 +38,9 @@ tlong = tlong %>%
 
 tlong %>% left_join(select(int, PROLIFIC_PID, gender, age, 
                            religion, education, politics_1, politics_2,
-                           read)) %>% 
+                           read, StartDate)) %>% 
+  mutate(StartDate = lubridate::ymd_hms(StartDate)) %>% 
+  mutate(RL = if_else(StartDate > ymd_hm("2021-01-11 22:00"), "L", "R")) %>% 
 
 write.csv("data/00_long_data.csv")
 
