@@ -65,7 +65,7 @@ norm <- pretest %>% filter(type=='Normative', grepl(paste(selected_keys,collapse
   select(-PROLIFIC_PID) 
 norm%>% psych::fa.parallel()
 
-norm2_EFA <- psych::fa(norm, nfactors = 1, rotate='oblimin')
+norm2_EFA <- psych::fa(norm, nfactors = 2, rotate='oblimin')
 norm2_EFA$loadings
 norm2_EFA$e.values
 norm2_EFA$score.cor
