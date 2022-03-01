@@ -1,0 +1,449 @@
+"","ResponseId","competence","key","resp","order","issue","expert"
+"1","R_yln3OFJCmPel2Fz","1,4,6,7","ab_1","28","First-order","Abortion","1"
+"2","R_1LhhDFcHIYuzDVy","6","ab_1","32","First-order","Abortion",NA
+"3","R_2Sk2jE1A7AGnWu0","1,3,7","ab_1","72","First-order","Abortion","1"
+"4","R_1FJStAvNx4lrdqs","4,6","ab_1","20","First-order","Abortion",NA
+"5","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","ab_1","69","First-order","Abortion","1"
+"6","R_xh0TdwWYNb5inip","1,4,6","ab_1","22","First-order","Abortion","1"
+"7","R_2WUoHGcLLFY85dn","3,7","ab_1","38","First-order","Abortion",NA
+"8","R_eF0DpwG2M4dPV7z","1,2,4,5,6","ab_1","32","First-order","Abortion","1"
+"9","R_2AEHOlms3qbTi2w","2,3","ab_1","34","First-order","Abortion",NA
+"10","R_2tF4O7tbhqHKSvh","1,3,4,7","ab_1","62","First-order","Abortion","1"
+"11","R_12Sb9Pow3NcgoVR","1,4,7","ab_1","100","First-order","Abortion","1"
+"12","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","ab_1","100","First-order","Abortion","1"
+"13","R_24CVr8wxyL0wHCH","4","ab_1","69","First-order","Abortion",NA
+"14","R_11awDKFfxEdzif2","1,4,6","ab_1","100","First-order","Abortion","1"
+"15","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","ab_1","22","First-order","Abortion","1"
+"16","R_WrFoEJPwoibUmPf","1,4,5,6,7","ab_1","28","First-order","Abortion","1"
+"17","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","ab_1","87","First-order","Abortion","1"
+"18","R_1jEeaHKhPBGfkrS","6","ab_1","100","First-order","Abortion",NA
+"19","R_VRrXGAlHYTK07bH","3","ab_1","39","First-order","Abortion",NA
+"20","R_dcBEisoICoJuICJ","1,5,6","ab_1","29","First-order","Abortion","1"
+"21","R_31i591gQ9xtygOo","3,5","ab_1","31","First-order","Abortion",NA
+"22","R_3Rt5zbFTy1H44vV","1,4,6","ab_1","14","First-order","Abortion","1"
+"23","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","ab_1","69","First-order","Abortion","1"
+"24","R_QnbyYLMxeRmuFoJ","4,6","ab_1","36","First-order","Abortion",NA
+"25","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","ab_1","70","First-order","Abortion","1"
+"26","R_2frmckzQOuDyGti","1,4,6,7","ab_1","36","First-order","Abortion","1"
+"27","R_W1HvtAPGEQETMXv","1,3,4,5,7","ab_1","70","First-order","Abortion","1"
+"28","R_1dMELwPaPaOEZGm","1,2,4,6,7","ab_1","45","First-order","Abortion","1"
+"29","R_0xpFr5z4ZldcnFn","1,4,5,6","ab_1","69","First-order","Abortion","1"
+"30","R_SSGPRUNwb6H6F1f","6","ab_1","70","First-order","Abortion",NA
+"31","R_YVPSRSlxmAiHMPf",NA,"ab_1","68","First-order","Abortion",NA
+"32","R_AC0ay16jhD62nVn","4","ab_1","13","First-order","Abortion",NA
+"33","R_yln3OFJCmPel2Fz","1,4,6,7","ab_c_1","70","Second-order","Abortion","1"
+"34","R_1LhhDFcHIYuzDVy","6","ab_c_1","31","Second-order","Abortion",NA
+"35","R_2Sk2jE1A7AGnWu0","1,3,7","ab_c_1","73","Second-order","Abortion","1"
+"36","R_1FJStAvNx4lrdqs","4,6","ab_c_1","0","Second-order","Abortion",NA
+"37","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","ab_c_1","68","Second-order","Abortion","1"
+"38","R_xh0TdwWYNb5inip","1,4,6","ab_c_1","57","Second-order","Abortion","1"
+"39","R_2WUoHGcLLFY85dn","3,7","ab_c_1","100","Second-order","Abortion",NA
+"40","R_eF0DpwG2M4dPV7z","1,2,4,5,6","ab_c_1","86","Second-order","Abortion","1"
+"41","R_2AEHOlms3qbTi2w","2,3","ab_c_1","0","Second-order","Abortion",NA
+"42","R_2tF4O7tbhqHKSvh","1,3,4,7","ab_c_1","34","Second-order","Abortion","1"
+"43","R_12Sb9Pow3NcgoVR","1,4,7","ab_c_1","0","Second-order","Abortion","1"
+"44","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","ab_c_1","86","Second-order","Abortion","1"
+"45","R_24CVr8wxyL0wHCH","4","ab_c_1","69","Second-order","Abortion",NA
+"46","R_11awDKFfxEdzif2","1,4,6","ab_c_1","85","Second-order","Abortion","1"
+"47","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","ab_c_1","93","Second-order","Abortion","1"
+"48","R_WrFoEJPwoibUmPf","1,4,5,6,7","ab_c_1","71","Second-order","Abortion","1"
+"49","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","ab_c_1","88","Second-order","Abortion","1"
+"50","R_1jEeaHKhPBGfkrS","6","ab_c_1","71","Second-order","Abortion",NA
+"51","R_VRrXGAlHYTK07bH","3","ab_c_1","78","Second-order","Abortion",NA
+"52","R_dcBEisoICoJuICJ","1,5,6","ab_c_1","66","Second-order","Abortion","1"
+"53","R_31i591gQ9xtygOo","3,5","ab_c_1","69","Second-order","Abortion",NA
+"54","R_3Rt5zbFTy1H44vV","1,4,6","ab_c_1","65","Second-order","Abortion","1"
+"55","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","ab_c_1","65","Second-order","Abortion","1"
+"56","R_QnbyYLMxeRmuFoJ","4,6","ab_c_1","37","Second-order","Abortion",NA
+"57","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","ab_c_1","9","Second-order","Abortion","1"
+"58","R_2frmckzQOuDyGti","1,4,6,7","ab_c_1","30","Second-order","Abortion","1"
+"59","R_W1HvtAPGEQETMXv","1,3,4,5,7","ab_c_1","71","Second-order","Abortion","1"
+"60","R_1dMELwPaPaOEZGm","1,2,4,6,7","ab_c_1","86","Second-order","Abortion","1"
+"61","R_0xpFr5z4ZldcnFn","1,4,5,6","ab_c_1","70","Second-order","Abortion","1"
+"62","R_SSGPRUNwb6H6F1f","6","ab_c_1","69","Second-order","Abortion",NA
+"63","R_YVPSRSlxmAiHMPf",NA,"ab_c_1","31","Second-order","Abortion",NA
+"64","R_AC0ay16jhD62nVn","4","ab_c_1","81","Second-order","Abortion",NA
+"65","R_yln3OFJCmPel2Fz","1,4,6,7","su_1","96","First-order","Surrogacy","1"
+"66","R_1LhhDFcHIYuzDVy","6","su_1","67","First-order","Surrogacy",NA
+"67","R_2Sk2jE1A7AGnWu0","1,3,7","su_1","63","First-order","Surrogacy",NA
+"68","R_1FJStAvNx4lrdqs","4,6","su_1","39","First-order","Surrogacy","1"
+"69","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","su_1","69","First-order","Surrogacy","1"
+"70","R_xh0TdwWYNb5inip","1,4,6","su_1","91","First-order","Surrogacy","1"
+"71","R_2WUoHGcLLFY85dn","3,7","su_1","41","First-order","Surrogacy",NA
+"72","R_eF0DpwG2M4dPV7z","1,2,4,5,6","su_1","68","First-order","Surrogacy","1"
+"73","R_2AEHOlms3qbTi2w","2,3","su_1","70","First-order","Surrogacy",NA
+"74","R_2tF4O7tbhqHKSvh","1,3,4,7","su_1","100","First-order","Surrogacy","1"
+"75","R_12Sb9Pow3NcgoVR","1,4,7","su_1","50","First-order","Surrogacy","1"
+"76","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","su_1","24","First-order","Surrogacy","1"
+"77","R_24CVr8wxyL0wHCH","4","su_1","93","First-order","Surrogacy","1"
+"78","R_11awDKFfxEdzif2","1,4,6","su_1","68","First-order","Surrogacy","1"
+"79","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","su_1","78","First-order","Surrogacy","1"
+"80","R_WrFoEJPwoibUmPf","1,4,5,6,7","su_1","33","First-order","Surrogacy","1"
+"81","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","su_1","67","First-order","Surrogacy","1"
+"82","R_1jEeaHKhPBGfkrS","6","su_1","95","First-order","Surrogacy",NA
+"83","R_VRrXGAlHYTK07bH","3","su_1","95","First-order","Surrogacy",NA
+"84","R_dcBEisoICoJuICJ","1,5,6","su_1","82","First-order","Surrogacy",NA
+"85","R_31i591gQ9xtygOo","3,5","su_1","99","First-order","Surrogacy",NA
+"86","R_3Rt5zbFTy1H44vV","1,4,6","su_1","53","First-order","Surrogacy","1"
+"87","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","su_1","68","First-order","Surrogacy","1"
+"88","R_QnbyYLMxeRmuFoJ","4,6","su_1","100","First-order","Surrogacy","1"
+"89","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","su_1","74","First-order","Surrogacy","1"
+"90","R_2frmckzQOuDyGti","1,4,6,7","su_1","74","First-order","Surrogacy","1"
+"91","R_W1HvtAPGEQETMXv","1,3,4,5,7","su_1","69","First-order","Surrogacy","1"
+"92","R_1dMELwPaPaOEZGm","1,2,4,6,7","su_1","50","First-order","Surrogacy","1"
+"93","R_0xpFr5z4ZldcnFn","1,4,5,6","su_1","66","First-order","Surrogacy","1"
+"94","R_SSGPRUNwb6H6F1f","6","su_1","94","First-order","Surrogacy",NA
+"95","R_YVPSRSlxmAiHMPf",NA,"su_1","51","First-order","Surrogacy",NA
+"96","R_AC0ay16jhD62nVn","4","su_1","50","First-order","Surrogacy","1"
+"97","R_yln3OFJCmPel2Fz","1,4,6,7","su_c_1","94","Second-order","Surrogacy","1"
+"98","R_1LhhDFcHIYuzDVy","6","su_c_1","68","Second-order","Surrogacy",NA
+"99","R_2Sk2jE1A7AGnWu0","1,3,7","su_c_1","0","Second-order","Surrogacy",NA
+"100","R_1FJStAvNx4lrdqs","4,6","su_c_1","86","Second-order","Surrogacy","1"
+"101","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","su_c_1","30","Second-order","Surrogacy","1"
+"102","R_xh0TdwWYNb5inip","1,4,6","su_c_1","92","Second-order","Surrogacy","1"
+"103","R_2WUoHGcLLFY85dn","3,7","su_c_1","45","Second-order","Surrogacy",NA
+"104","R_eF0DpwG2M4dPV7z","1,2,4,5,6","su_c_1","31","Second-order","Surrogacy","1"
+"105","R_2AEHOlms3qbTi2w","2,3","su_c_1","61","Second-order","Surrogacy",NA
+"106","R_2tF4O7tbhqHKSvh","1,3,4,7","su_c_1","100","Second-order","Surrogacy","1"
+"107","R_12Sb9Pow3NcgoVR","1,4,7","su_c_1","90","Second-order","Surrogacy","1"
+"108","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","su_c_1","85","Second-order","Surrogacy","1"
+"109","R_24CVr8wxyL0wHCH","4","su_c_1","95","Second-order","Surrogacy","1"
+"110","R_11awDKFfxEdzif2","1,4,6","su_c_1","53","Second-order","Surrogacy","1"
+"111","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","su_c_1","73","Second-order","Surrogacy","1"
+"112","R_WrFoEJPwoibUmPf","1,4,5,6,7","su_c_1","73","Second-order","Surrogacy","1"
+"113","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","su_c_1","82","Second-order","Surrogacy","1"
+"114","R_1jEeaHKhPBGfkrS","6","su_c_1","100","Second-order","Surrogacy",NA
+"115","R_VRrXGAlHYTK07bH","3","su_c_1","99","Second-order","Surrogacy",NA
+"116","R_dcBEisoICoJuICJ","1,5,6","su_c_1","100","Second-order","Surrogacy",NA
+"117","R_31i591gQ9xtygOo","3,5","su_c_1","99","Second-order","Surrogacy",NA
+"118","R_3Rt5zbFTy1H44vV","1,4,6","su_c_1","100","Second-order","Surrogacy","1"
+"119","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","su_c_1","64","Second-order","Surrogacy","1"
+"120","R_QnbyYLMxeRmuFoJ","4,6","su_c_1","100","Second-order","Surrogacy","1"
+"121","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","su_c_1","70","Second-order","Surrogacy","1"
+"122","R_2frmckzQOuDyGti","1,4,6,7","su_c_1","63","Second-order","Surrogacy","1"
+"123","R_W1HvtAPGEQETMXv","1,3,4,5,7","su_c_1","70","Second-order","Surrogacy","1"
+"124","R_1dMELwPaPaOEZGm","1,2,4,6,7","su_c_1","50","Second-order","Surrogacy","1"
+"125","R_0xpFr5z4ZldcnFn","1,4,5,6","su_c_1","45","Second-order","Surrogacy","1"
+"126","R_SSGPRUNwb6H6F1f","6","su_c_1","96","Second-order","Surrogacy",NA
+"127","R_YVPSRSlxmAiHMPf",NA,"su_c_1","51","Second-order","Surrogacy",NA
+"128","R_AC0ay16jhD62nVn","4","su_c_1","0","Second-order","Surrogacy","1"
+"129","R_yln3OFJCmPel2Fz","1,4,6,7","va_1","33","First-order","Vaccines","1"
+"130","R_1LhhDFcHIYuzDVy","6","va_1","0","First-order","Vaccines","1"
+"131","R_2Sk2jE1A7AGnWu0","1,3,7","va_1","26","First-order","Vaccines",NA
+"132","R_1FJStAvNx4lrdqs","4,6","va_1","25","First-order","Vaccines","1"
+"133","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","va_1","1","First-order","Vaccines","1"
+"134","R_xh0TdwWYNb5inip","1,4,6","va_1","67","First-order","Vaccines","1"
+"135","R_2WUoHGcLLFY85dn","3,7","va_1","0","First-order","Vaccines",NA
+"136","R_eF0DpwG2M4dPV7z","1,2,4,5,6","va_1","19","First-order","Vaccines","1"
+"137","R_2AEHOlms3qbTi2w","2,3","va_1","29","First-order","Vaccines",NA
+"138","R_2tF4O7tbhqHKSvh","1,3,4,7","va_1","59","First-order","Vaccines",NA
+"139","R_12Sb9Pow3NcgoVR","1,4,7","va_1","0","First-order","Vaccines",NA
+"140","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","va_1","12","First-order","Vaccines","1"
+"141","R_24CVr8wxyL0wHCH","4","va_1","87","First-order","Vaccines",NA
+"142","R_11awDKFfxEdzif2","1,4,6","va_1","32","First-order","Vaccines","1"
+"143","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","va_1","61","First-order","Vaccines","1"
+"144","R_WrFoEJPwoibUmPf","1,4,5,6,7","va_1","33","First-order","Vaccines","1"
+"145","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","va_1","7","First-order","Vaccines","1"
+"146","R_1jEeaHKhPBGfkrS","6","va_1","0","First-order","Vaccines","1"
+"147","R_VRrXGAlHYTK07bH","3","va_1","5","First-order","Vaccines",NA
+"148","R_dcBEisoICoJuICJ","1,5,6","va_1","32","First-order","Vaccines","1"
+"149","R_31i591gQ9xtygOo","3,5","va_1","1","First-order","Vaccines",NA
+"150","R_3Rt5zbFTy1H44vV","1,4,6","va_1","33","First-order","Vaccines","1"
+"151","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","va_1","0","First-order","Vaccines","1"
+"152","R_QnbyYLMxeRmuFoJ","4,6","va_1","27","First-order","Vaccines","1"
+"153","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","va_1","3","First-order","Vaccines",NA
+"154","R_2frmckzQOuDyGti","1,4,6,7","va_1","18","First-order","Vaccines","1"
+"155","R_W1HvtAPGEQETMXv","1,3,4,5,7","va_1","32","First-order","Vaccines",NA
+"156","R_1dMELwPaPaOEZGm","1,2,4,6,7","va_1","0","First-order","Vaccines","1"
+"157","R_0xpFr5z4ZldcnFn","1,4,5,6","va_1","32","First-order","Vaccines","1"
+"158","R_SSGPRUNwb6H6F1f","6","va_1","3","First-order","Vaccines","1"
+"159","R_YVPSRSlxmAiHMPf",NA,"va_1","32","First-order","Vaccines",NA
+"160","R_AC0ay16jhD62nVn","4","va_1","19","First-order","Vaccines",NA
+"161","R_yln3OFJCmPel2Fz","1,4,6,7","va_c_1","100","Second-order","Vaccines","1"
+"162","R_1LhhDFcHIYuzDVy","6","va_c_1","86","Second-order","Vaccines","1"
+"163","R_2Sk2jE1A7AGnWu0","1,3,7","va_c_1","65","Second-order","Vaccines",NA
+"164","R_1FJStAvNx4lrdqs","4,6","va_c_1","100","Second-order","Vaccines","1"
+"165","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","va_c_1","68","Second-order","Vaccines","1"
+"166","R_xh0TdwWYNb5inip","1,4,6","va_c_1","68","Second-order","Vaccines","1"
+"167","R_2WUoHGcLLFY85dn","3,7","va_c_1","33","Second-order","Vaccines",NA
+"168","R_eF0DpwG2M4dPV7z","1,2,4,5,6","va_c_1","68","Second-order","Vaccines","1"
+"169","R_2AEHOlms3qbTi2w","2,3","va_c_1","74","Second-order","Vaccines",NA
+"170","R_2tF4O7tbhqHKSvh","1,3,4,7","va_c_1","69","Second-order","Vaccines",NA
+"171","R_12Sb9Pow3NcgoVR","1,4,7","va_c_1","94","Second-order","Vaccines",NA
+"172","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","va_c_1","38","Second-order","Vaccines","1"
+"173","R_24CVr8wxyL0wHCH","4","va_c_1","95","Second-order","Vaccines",NA
+"174","R_11awDKFfxEdzif2","1,4,6","va_c_1","86","Second-order","Vaccines","1"
+"175","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","va_c_1","85","Second-order","Vaccines","1"
+"176","R_WrFoEJPwoibUmPf","1,4,5,6,7","va_c_1","72","Second-order","Vaccines","1"
+"177","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","va_c_1","90","Second-order","Vaccines","1"
+"178","R_1jEeaHKhPBGfkrS","6","va_c_1","100","Second-order","Vaccines","1"
+"179","R_VRrXGAlHYTK07bH","3","va_c_1","100","Second-order","Vaccines",NA
+"180","R_dcBEisoICoJuICJ","1,5,6","va_c_1","100","Second-order","Vaccines","1"
+"181","R_31i591gQ9xtygOo","3,5","va_c_1","99","Second-order","Vaccines",NA
+"182","R_3Rt5zbFTy1H44vV","1,4,6","va_c_1","78","Second-order","Vaccines","1"
+"183","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","va_c_1","0","Second-order","Vaccines","1"
+"184","R_QnbyYLMxeRmuFoJ","4,6","va_c_1","32","Second-order","Vaccines","1"
+"185","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","va_c_1","100","Second-order","Vaccines",NA
+"186","R_2frmckzQOuDyGti","1,4,6,7","va_c_1","98","Second-order","Vaccines","1"
+"187","R_W1HvtAPGEQETMXv","1,3,4,5,7","va_c_1","50","Second-order","Vaccines",NA
+"188","R_1dMELwPaPaOEZGm","1,2,4,6,7","va_c_1","100","Second-order","Vaccines","1"
+"189","R_0xpFr5z4ZldcnFn","1,4,5,6","va_c_1","95","Second-order","Vaccines","1"
+"190","R_SSGPRUNwb6H6F1f","6","va_c_1","96","Second-order","Vaccines","1"
+"191","R_YVPSRSlxmAiHMPf",NA,"va_c_1","99","Second-order","Vaccines",NA
+"192","R_AC0ay16jhD62nVn","4","va_c_1","100","Second-order","Vaccines",NA
+"193","R_yln3OFJCmPel2Fz","1,4,6,7","gm_1","100","First-order","GM Crops",NA
+"194","R_1LhhDFcHIYuzDVy","6","gm_1","85","First-order","GM Crops",NA
+"195","R_2Sk2jE1A7AGnWu0","1,3,7","gm_1","100","First-order","GM Crops","1"
+"196","R_1FJStAvNx4lrdqs","4,6","gm_1","92","First-order","GM Crops",NA
+"197","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","gm_1","68","First-order","GM Crops","1"
+"198","R_xh0TdwWYNb5inip","1,4,6","gm_1","31","First-order","GM Crops",NA
+"199","R_2WUoHGcLLFY85dn","3,7","gm_1","100","First-order","GM Crops","1"
+"200","R_eF0DpwG2M4dPV7z","1,2,4,5,6","gm_1","68","First-order","GM Crops",NA
+"201","R_2AEHOlms3qbTi2w","2,3","gm_1","67","First-order","GM Crops","1"
+"202","R_2tF4O7tbhqHKSvh","1,3,4,7","gm_1","71","First-order","GM Crops","1"
+"203","R_12Sb9Pow3NcgoVR","1,4,7","gm_1","100","First-order","GM Crops",NA
+"204","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","gm_1","77","First-order","GM Crops","1"
+"205","R_24CVr8wxyL0wHCH","4","gm_1","69","First-order","GM Crops",NA
+"206","R_11awDKFfxEdzif2","1,4,6","gm_1","78","First-order","GM Crops",NA
+"207","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","gm_1","100","First-order","GM Crops","1"
+"208","R_WrFoEJPwoibUmPf","1,4,5,6,7","gm_1","71","First-order","GM Crops",NA
+"209","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","gm_1","69","First-order","GM Crops","1"
+"210","R_1jEeaHKhPBGfkrS","6","gm_1","97","First-order","GM Crops",NA
+"211","R_VRrXGAlHYTK07bH","3","gm_1","96","First-order","GM Crops","1"
+"212","R_dcBEisoICoJuICJ","1,5,6","gm_1","68","First-order","GM Crops",NA
+"213","R_31i591gQ9xtygOo","3,5","gm_1","34","First-order","GM Crops","1"
+"214","R_3Rt5zbFTy1H44vV","1,4,6","gm_1","100","First-order","GM Crops",NA
+"215","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","gm_1","93","First-order","GM Crops","1"
+"216","R_QnbyYLMxeRmuFoJ","4,6","gm_1","30","First-order","GM Crops",NA
+"217","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","gm_1","33","First-order","GM Crops","1"
+"218","R_2frmckzQOuDyGti","1,4,6,7","gm_1","100","First-order","GM Crops",NA
+"219","R_W1HvtAPGEQETMXv","1,3,4,5,7","gm_1","100","First-order","GM Crops","1"
+"220","R_1dMELwPaPaOEZGm","1,2,4,6,7","gm_1","86","First-order","GM Crops",NA
+"221","R_0xpFr5z4ZldcnFn","1,4,5,6","gm_1","67","First-order","GM Crops",NA
+"222","R_SSGPRUNwb6H6F1f","6","gm_1","85","First-order","GM Crops",NA
+"223","R_YVPSRSlxmAiHMPf",NA,"gm_1","98","First-order","GM Crops",NA
+"224","R_AC0ay16jhD62nVn","4","gm_1","50","First-order","GM Crops",NA
+"225","R_yln3OFJCmPel2Fz","1,4,6,7","gm_c_1","93","Second-order","GM Crops",NA
+"226","R_1LhhDFcHIYuzDVy","6","gm_c_1","67","Second-order","GM Crops",NA
+"227","R_2Sk2jE1A7AGnWu0","1,3,7","gm_c_1","100","Second-order","GM Crops","1"
+"228","R_1FJStAvNx4lrdqs","4,6","gm_c_1","82","Second-order","GM Crops",NA
+"229","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","gm_c_1","69","Second-order","GM Crops","1"
+"230","R_xh0TdwWYNb5inip","1,4,6","gm_c_1","35","Second-order","GM Crops",NA
+"231","R_2WUoHGcLLFY85dn","3,7","gm_c_1","100","Second-order","GM Crops","1"
+"232","R_eF0DpwG2M4dPV7z","1,2,4,5,6","gm_c_1","67","Second-order","GM Crops",NA
+"233","R_2AEHOlms3qbTi2w","2,3","gm_c_1","69","Second-order","GM Crops","1"
+"234","R_2tF4O7tbhqHKSvh","1,3,4,7","gm_c_1","29","Second-order","GM Crops","1"
+"235","R_12Sb9Pow3NcgoVR","1,4,7","gm_c_1","98","Second-order","GM Crops",NA
+"236","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","gm_c_1","78","Second-order","GM Crops","1"
+"237","R_24CVr8wxyL0wHCH","4","gm_c_1","71","Second-order","GM Crops",NA
+"238","R_11awDKFfxEdzif2","1,4,6","gm_c_1","77","Second-order","GM Crops",NA
+"239","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","gm_c_1","100","Second-order","GM Crops","1"
+"240","R_WrFoEJPwoibUmPf","1,4,5,6,7","gm_c_1","71","Second-order","GM Crops",NA
+"241","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","gm_c_1","68","Second-order","GM Crops","1"
+"242","R_1jEeaHKhPBGfkrS","6","gm_c_1","100","Second-order","GM Crops",NA
+"243","R_VRrXGAlHYTK07bH","3","gm_c_1","96","Second-order","GM Crops","1"
+"244","R_dcBEisoICoJuICJ","1,5,6","gm_c_1","100","Second-order","GM Crops",NA
+"245","R_31i591gQ9xtygOo","3,5","gm_c_1","31","Second-order","GM Crops","1"
+"246","R_3Rt5zbFTy1H44vV","1,4,6","gm_c_1","94","Second-order","GM Crops",NA
+"247","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","gm_c_1","84","Second-order","GM Crops","1"
+"248","R_QnbyYLMxeRmuFoJ","4,6","gm_c_1","35","Second-order","GM Crops",NA
+"249","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","gm_c_1","62","Second-order","GM Crops","1"
+"250","R_2frmckzQOuDyGti","1,4,6,7","gm_c_1","100","Second-order","GM Crops",NA
+"251","R_W1HvtAPGEQETMXv","1,3,4,5,7","gm_c_1","69","Second-order","GM Crops","1"
+"252","R_1dMELwPaPaOEZGm","1,2,4,6,7","gm_c_1","100","Second-order","GM Crops",NA
+"253","R_0xpFr5z4ZldcnFn","1,4,5,6","gm_c_1","69","Second-order","GM Crops",NA
+"254","R_SSGPRUNwb6H6F1f","6","gm_c_1","72","Second-order","GM Crops",NA
+"255","R_YVPSRSlxmAiHMPf",NA,"gm_c_1","100","Second-order","GM Crops",NA
+"256","R_AC0ay16jhD62nVn","4","gm_c_1","0","Second-order","GM Crops",NA
+"257","R_yln3OFJCmPel2Fz","1,4,6,7","sa_1","70","First-order","Sexual Assistance",NA
+"258","R_1LhhDFcHIYuzDVy","6","sa_1","60","First-order","Sexual Assistance",NA
+"259","R_2Sk2jE1A7AGnWu0","1,3,7","sa_1","74","First-order","Sexual Assistance",NA
+"260","R_1FJStAvNx4lrdqs","4,6","sa_1","100","First-order","Sexual Assistance",NA
+"261","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","sa_1","67","First-order","Sexual Assistance","1"
+"262","R_xh0TdwWYNb5inip","1,4,6","sa_1","17","First-order","Sexual Assistance",NA
+"263","R_2WUoHGcLLFY85dn","3,7","sa_1","100","First-order","Sexual Assistance",NA
+"264","R_eF0DpwG2M4dPV7z","1,2,4,5,6","sa_1","51","First-order","Sexual Assistance","1"
+"265","R_2AEHOlms3qbTi2w","2,3","sa_1","70","First-order","Sexual Assistance",NA
+"266","R_2tF4O7tbhqHKSvh","1,3,4,7","sa_1","1","First-order","Sexual Assistance",NA
+"267","R_12Sb9Pow3NcgoVR","1,4,7","sa_1","66","First-order","Sexual Assistance",NA
+"268","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","sa_1","94","First-order","Sexual Assistance","1"
+"269","R_24CVr8wxyL0wHCH","4","sa_1","32","First-order","Sexual Assistance",NA
+"270","R_11awDKFfxEdzif2","1,4,6","sa_1","78","First-order","Sexual Assistance",NA
+"271","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","sa_1","100","First-order","Sexual Assistance","1"
+"272","R_WrFoEJPwoibUmPf","1,4,5,6,7","sa_1","96","First-order","Sexual Assistance","1"
+"273","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","sa_1","100","First-order","Sexual Assistance","1"
+"274","R_1jEeaHKhPBGfkrS","6","sa_1","33","First-order","Sexual Assistance",NA
+"275","R_VRrXGAlHYTK07bH","3","sa_1","63","First-order","Sexual Assistance",NA
+"276","R_dcBEisoICoJuICJ","1,5,6","sa_1","0","First-order","Sexual Assistance","1"
+"277","R_31i591gQ9xtygOo","3,5","sa_1","67","First-order","Sexual Assistance","1"
+"278","R_3Rt5zbFTy1H44vV","1,4,6","sa_1","77","First-order","Sexual Assistance",NA
+"279","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","sa_1","100","First-order","Sexual Assistance","1"
+"280","R_QnbyYLMxeRmuFoJ","4,6","sa_1","33","First-order","Sexual Assistance",NA
+"281","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","sa_1","95","First-order","Sexual Assistance","1"
+"282","R_2frmckzQOuDyGti","1,4,6,7","sa_1","81","First-order","Sexual Assistance",NA
+"283","R_W1HvtAPGEQETMXv","1,3,4,5,7","sa_1","100","First-order","Sexual Assistance","1"
+"284","R_1dMELwPaPaOEZGm","1,2,4,6,7","sa_1","70","First-order","Sexual Assistance",NA
+"285","R_0xpFr5z4ZldcnFn","1,4,5,6","sa_1","68","First-order","Sexual Assistance","1"
+"286","R_SSGPRUNwb6H6F1f","6","sa_1","68","First-order","Sexual Assistance",NA
+"287","R_YVPSRSlxmAiHMPf",NA,"sa_1","96","First-order","Sexual Assistance",NA
+"288","R_AC0ay16jhD62nVn","4","sa_1","68","First-order","Sexual Assistance",NA
+"289","R_yln3OFJCmPel2Fz","1,4,6,7","sa_c_1","34","Second-order","Sexual Assistance",NA
+"290","R_1LhhDFcHIYuzDVy","6","sa_c_1","37","Second-order","Sexual Assistance",NA
+"291","R_2Sk2jE1A7AGnWu0","1,3,7","sa_c_1","35","Second-order","Sexual Assistance",NA
+"292","R_1FJStAvNx4lrdqs","4,6","sa_c_1","100","Second-order","Sexual Assistance",NA
+"293","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","sa_c_1","68","Second-order","Sexual Assistance","1"
+"294","R_xh0TdwWYNb5inip","1,4,6","sa_c_1","71","Second-order","Sexual Assistance",NA
+"295","R_2WUoHGcLLFY85dn","3,7","sa_c_1","35","Second-order","Sexual Assistance",NA
+"296","R_eF0DpwG2M4dPV7z","1,2,4,5,6","sa_c_1","32","Second-order","Sexual Assistance","1"
+"297","R_2AEHOlms3qbTi2w","2,3","sa_c_1","64","Second-order","Sexual Assistance",NA
+"298","R_2tF4O7tbhqHKSvh","1,3,4,7","sa_c_1","100","Second-order","Sexual Assistance",NA
+"299","R_12Sb9Pow3NcgoVR","1,4,7","sa_c_1","10","Second-order","Sexual Assistance",NA
+"300","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","sa_c_1","85","Second-order","Sexual Assistance","1"
+"301","R_24CVr8wxyL0wHCH","4","sa_c_1","79","Second-order","Sexual Assistance",NA
+"302","R_11awDKFfxEdzif2","1,4,6","sa_c_1","67","Second-order","Sexual Assistance",NA
+"303","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","sa_c_1","100","Second-order","Sexual Assistance","1"
+"304","R_WrFoEJPwoibUmPf","1,4,5,6,7","sa_c_1","96","Second-order","Sexual Assistance","1"
+"305","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","sa_c_1","100","Second-order","Sexual Assistance","1"
+"306","R_1jEeaHKhPBGfkrS","6","sa_c_1","82","Second-order","Sexual Assistance",NA
+"307","R_VRrXGAlHYTK07bH","3","sa_c_1","40","Second-order","Sexual Assistance",NA
+"308","R_dcBEisoICoJuICJ","1,5,6","sa_c_1","100","Second-order","Sexual Assistance","1"
+"309","R_31i591gQ9xtygOo","3,5","sa_c_1","68","Second-order","Sexual Assistance","1"
+"310","R_3Rt5zbFTy1H44vV","1,4,6","sa_c_1","58","Second-order","Sexual Assistance",NA
+"311","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","sa_c_1","86","Second-order","Sexual Assistance","1"
+"312","R_QnbyYLMxeRmuFoJ","4,6","sa_c_1","37","Second-order","Sexual Assistance",NA
+"313","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","sa_c_1","100","Second-order","Sexual Assistance","1"
+"314","R_2frmckzQOuDyGti","1,4,6,7","sa_c_1","82","Second-order","Sexual Assistance",NA
+"315","R_W1HvtAPGEQETMXv","1,3,4,5,7","sa_c_1","67","Second-order","Sexual Assistance","1"
+"316","R_1dMELwPaPaOEZGm","1,2,4,6,7","sa_c_1","69","Second-order","Sexual Assistance",NA
+"317","R_0xpFr5z4ZldcnFn","1,4,5,6","sa_c_1","29","Second-order","Sexual Assistance","1"
+"318","R_SSGPRUNwb6H6F1f","6","sa_c_1","70","Second-order","Sexual Assistance",NA
+"319","R_YVPSRSlxmAiHMPf",NA,"sa_c_1","98","Second-order","Sexual Assistance",NA
+"320","R_AC0ay16jhD62nVn","4","sa_c_1","36","Second-order","Sexual Assistance",NA
+"321","R_yln3OFJCmPel2Fz","1,4,6,7","br_1","100","First-order","Animals in Research","1"
+"322","R_1LhhDFcHIYuzDVy","6","br_1","14","First-order","Animals in Research",NA
+"323","R_2Sk2jE1A7AGnWu0","1,3,7","br_1","24","First-order","Animals in Research","1"
+"324","R_1FJStAvNx4lrdqs","4,6","br_1","41","First-order","Animals in Research",NA
+"325","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","br_1","33","First-order","Animals in Research","1"
+"326","R_xh0TdwWYNb5inip","1,4,6","br_1","63","First-order","Animals in Research",NA
+"327","R_2WUoHGcLLFY85dn","3,7","br_1","0","First-order","Animals in Research","1"
+"328","R_eF0DpwG2M4dPV7z","1,2,4,5,6","br_1","51","First-order","Animals in Research",NA
+"329","R_2AEHOlms3qbTi2w","2,3","br_1","71","First-order","Animals in Research",NA
+"330","R_2tF4O7tbhqHKSvh","1,3,4,7","br_1","72","First-order","Animals in Research","1"
+"331","R_12Sb9Pow3NcgoVR","1,4,7","br_1","97","First-order","Animals in Research","1"
+"332","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","br_1","79","First-order","Animals in Research","1"
+"333","R_24CVr8wxyL0wHCH","4","br_1","97","First-order","Animals in Research",NA
+"334","R_11awDKFfxEdzif2","1,4,6","br_1","99","First-order","Animals in Research",NA
+"335","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","br_1","68","First-order","Animals in Research","1"
+"336","R_WrFoEJPwoibUmPf","1,4,5,6,7","br_1","71","First-order","Animals in Research","1"
+"337","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","br_1","71","First-order","Animals in Research","1"
+"338","R_1jEeaHKhPBGfkrS","6","br_1","85","First-order","Animals in Research",NA
+"339","R_VRrXGAlHYTK07bH","3","br_1","12","First-order","Animals in Research",NA
+"340","R_dcBEisoICoJuICJ","1,5,6","br_1","66","First-order","Animals in Research",NA
+"341","R_31i591gQ9xtygOo","3,5","br_1","100","First-order","Animals in Research",NA
+"342","R_3Rt5zbFTy1H44vV","1,4,6","br_1","31","First-order","Animals in Research",NA
+"343","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","br_1","69","First-order","Animals in Research","1"
+"344","R_QnbyYLMxeRmuFoJ","4,6","br_1","100","First-order","Animals in Research",NA
+"345","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","br_1","74","First-order","Animals in Research","1"
+"346","R_2frmckzQOuDyGti","1,4,6,7","br_1","61","First-order","Animals in Research","1"
+"347","R_W1HvtAPGEQETMXv","1,3,4,5,7","br_1","100","First-order","Animals in Research","1"
+"348","R_1dMELwPaPaOEZGm","1,2,4,6,7","br_1","100","First-order","Animals in Research","1"
+"349","R_0xpFr5z4ZldcnFn","1,4,5,6","br_1","68","First-order","Animals in Research",NA
+"350","R_SSGPRUNwb6H6F1f","6","br_1","85","First-order","Animals in Research",NA
+"351","R_YVPSRSlxmAiHMPf",NA,"br_1","68","First-order","Animals in Research",NA
+"352","R_AC0ay16jhD62nVn","4","br_1","81","First-order","Animals in Research",NA
+"353","R_yln3OFJCmPel2Fz","1,4,6,7","br_c_1","100","Second-order","Animals in Research","1"
+"354","R_1LhhDFcHIYuzDVy","6","br_c_1","69","Second-order","Animals in Research",NA
+"355","R_2Sk2jE1A7AGnWu0","1,3,7","br_c_1","69","Second-order","Animals in Research","1"
+"356","R_1FJStAvNx4lrdqs","4,6","br_c_1","58","Second-order","Animals in Research",NA
+"357","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","br_c_1","33","Second-order","Animals in Research","1"
+"358","R_xh0TdwWYNb5inip","1,4,6","br_c_1","65","Second-order","Animals in Research",NA
+"359","R_2WUoHGcLLFY85dn","3,7","br_c_1","100","Second-order","Animals in Research","1"
+"360","R_eF0DpwG2M4dPV7z","1,2,4,5,6","br_c_1","32","Second-order","Animals in Research",NA
+"361","R_2AEHOlms3qbTi2w","2,3","br_c_1","73","Second-order","Animals in Research",NA
+"362","R_2tF4O7tbhqHKSvh","1,3,4,7","br_c_1","30","Second-order","Animals in Research","1"
+"363","R_12Sb9Pow3NcgoVR","1,4,7","br_c_1","98","Second-order","Animals in Research","1"
+"364","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","br_c_1","59","Second-order","Animals in Research","1"
+"365","R_24CVr8wxyL0wHCH","4","br_c_1","100","Second-order","Animals in Research",NA
+"366","R_11awDKFfxEdzif2","1,4,6","br_c_1","91","Second-order","Animals in Research",NA
+"367","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","br_c_1","54","Second-order","Animals in Research","1"
+"368","R_WrFoEJPwoibUmPf","1,4,5,6,7","br_c_1","72","Second-order","Animals in Research","1"
+"369","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","br_c_1","70","Second-order","Animals in Research","1"
+"370","R_1jEeaHKhPBGfkrS","6","br_c_1","86","Second-order","Animals in Research",NA
+"371","R_VRrXGAlHYTK07bH","3","br_c_1","91","Second-order","Animals in Research",NA
+"372","R_dcBEisoICoJuICJ","1,5,6","br_c_1","100","Second-order","Animals in Research",NA
+"373","R_31i591gQ9xtygOo","3,5","br_c_1","100","Second-order","Animals in Research",NA
+"374","R_3Rt5zbFTy1H44vV","1,4,6","br_c_1","69","Second-order","Animals in Research",NA
+"375","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","br_c_1","85","Second-order","Animals in Research","1"
+"376","R_QnbyYLMxeRmuFoJ","4,6","br_c_1","65","Second-order","Animals in Research",NA
+"377","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","br_c_1","75","Second-order","Animals in Research","1"
+"378","R_2frmckzQOuDyGti","1,4,6,7","br_c_1","63","Second-order","Animals in Research","1"
+"379","R_W1HvtAPGEQETMXv","1,3,4,5,7","br_c_1","73","Second-order","Animals in Research","1"
+"380","R_1dMELwPaPaOEZGm","1,2,4,6,7","br_c_1","100","Second-order","Animals in Research","1"
+"381","R_0xpFr5z4ZldcnFn","1,4,5,6","br_c_1","34","Second-order","Animals in Research",NA
+"382","R_SSGPRUNwb6H6F1f","6","br_c_1","75","Second-order","Animals in Research",NA
+"383","R_YVPSRSlxmAiHMPf",NA,"br_c_1","69","Second-order","Animals in Research",NA
+"384","R_AC0ay16jhD62nVn","4","br_c_1","22","Second-order","Animals in Research",NA
+"385","R_yln3OFJCmPel2Fz","1,4,6,7","pb_1","100","First-order","Transgender Teen",NA
+"386","R_1LhhDFcHIYuzDVy","6","pb_1","60","First-order","Transgender Teen",NA
+"387","R_2Sk2jE1A7AGnWu0","1,3,7","pb_1","63","First-order","Transgender Teen",NA
+"388","R_1FJStAvNx4lrdqs","4,6","pb_1","100","First-order","Transgender Teen",NA
+"389","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","pb_1","98","First-order","Transgender Teen","1"
+"390","R_xh0TdwWYNb5inip","1,4,6","pb_1","69","First-order","Transgender Teen",NA
+"391","R_2WUoHGcLLFY85dn","3,7","pb_1","43","First-order","Transgender Teen",NA
+"392","R_eF0DpwG2M4dPV7z","1,2,4,5,6","pb_1","71","First-order","Transgender Teen","1"
+"393","R_2AEHOlms3qbTi2w","2,3","pb_1","100","First-order","Transgender Teen","1"
+"394","R_2tF4O7tbhqHKSvh","1,3,4,7","pb_1","80","First-order","Transgender Teen",NA
+"395","R_12Sb9Pow3NcgoVR","1,4,7","pb_1","89","First-order","Transgender Teen",NA
+"396","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","pb_1","86","First-order","Transgender Teen","1"
+"397","R_24CVr8wxyL0wHCH","4","pb_1","78","First-order","Transgender Teen",NA
+"398","R_11awDKFfxEdzif2","1,4,6","pb_1","73","First-order","Transgender Teen",NA
+"399","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","pb_1","62","First-order","Transgender Teen","1"
+"400","R_WrFoEJPwoibUmPf","1,4,5,6,7","pb_1","74","First-order","Transgender Teen",NA
+"401","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","pb_1","61","First-order","Transgender Teen","1"
+"402","R_1jEeaHKhPBGfkrS","6","pb_1","61","First-order","Transgender Teen",NA
+"403","R_VRrXGAlHYTK07bH","3","pb_1","26","First-order","Transgender Teen",NA
+"404","R_dcBEisoICoJuICJ","1,5,6","pb_1","71","First-order","Transgender Teen",NA
+"405","R_31i591gQ9xtygOo","3,5","pb_1","99","First-order","Transgender Teen",NA
+"406","R_3Rt5zbFTy1H44vV","1,4,6","pb_1","56","First-order","Transgender Teen",NA
+"407","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","pb_1","5","First-order","Transgender Teen","1"
+"408","R_QnbyYLMxeRmuFoJ","4,6","pb_1","100","First-order","Transgender Teen",NA
+"409","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","pb_1","74","First-order","Transgender Teen","1"
+"410","R_2frmckzQOuDyGti","1,4,6,7","pb_1","72","First-order","Transgender Teen",NA
+"411","R_W1HvtAPGEQETMXv","1,3,4,5,7","pb_1","81","First-order","Transgender Teen",NA
+"412","R_1dMELwPaPaOEZGm","1,2,4,6,7","pb_1","81","First-order","Transgender Teen","1"
+"413","R_0xpFr5z4ZldcnFn","1,4,5,6","pb_1","80","First-order","Transgender Teen",NA
+"414","R_SSGPRUNwb6H6F1f","6","pb_1","59","First-order","Transgender Teen",NA
+"415","R_YVPSRSlxmAiHMPf",NA,"pb_1","73","First-order","Transgender Teen",NA
+"416","R_AC0ay16jhD62nVn","4","pb_1","75","First-order","Transgender Teen",NA
+"417","R_yln3OFJCmPel2Fz","1,4,6,7","pb_c_1","70","Second-order","Transgender Teen",NA
+"418","R_1LhhDFcHIYuzDVy","6","pb_c_1","86","Second-order","Transgender Teen",NA
+"419","R_2Sk2jE1A7AGnWu0","1,3,7","pb_c_1","10","Second-order","Transgender Teen",NA
+"420","R_1FJStAvNx4lrdqs","4,6","pb_c_1","96","Second-order","Transgender Teen",NA
+"421","R_vZHYDc70oGHT2I9","1,2,3,4,5,6,7","pb_c_1","67","Second-order","Transgender Teen","1"
+"422","R_xh0TdwWYNb5inip","1,4,6","pb_c_1","70","Second-order","Transgender Teen",NA
+"423","R_2WUoHGcLLFY85dn","3,7","pb_c_1","38","Second-order","Transgender Teen",NA
+"424","R_eF0DpwG2M4dPV7z","1,2,4,5,6","pb_c_1","70","Second-order","Transgender Teen","1"
+"425","R_2AEHOlms3qbTi2w","2,3","pb_c_1","100","Second-order","Transgender Teen","1"
+"426","R_2tF4O7tbhqHKSvh","1,3,4,7","pb_c_1","31","Second-order","Transgender Teen",NA
+"427","R_12Sb9Pow3NcgoVR","1,4,7","pb_c_1","96","Second-order","Transgender Teen",NA
+"428","R_2y7OZP9fEMH82On","1,2,3,4,5,6,7","pb_c_1","86","Second-order","Transgender Teen","1"
+"429","R_24CVr8wxyL0wHCH","4","pb_c_1","79","Second-order","Transgender Teen",NA
+"430","R_11awDKFfxEdzif2","1,4,6","pb_c_1","98","Second-order","Transgender Teen",NA
+"431","R_3ivPtLvnMNCYjOJ","1,2,3,4,5,6,7","pb_c_1","81","Second-order","Transgender Teen","1"
+"432","R_WrFoEJPwoibUmPf","1,4,5,6,7","pb_c_1","78","Second-order","Transgender Teen",NA
+"433","R_2rot90a0P8oeX4k","1,2,3,4,5,6,7","pb_c_1","78","Second-order","Transgender Teen","1"
+"434","R_1jEeaHKhPBGfkrS","6","pb_c_1","98","Second-order","Transgender Teen",NA
+"435","R_VRrXGAlHYTK07bH","3","pb_c_1","91","Second-order","Transgender Teen",NA
+"436","R_dcBEisoICoJuICJ","1,5,6","pb_c_1","100","Second-order","Transgender Teen",NA
+"437","R_31i591gQ9xtygOo","3,5","pb_c_1","99","Second-order","Transgender Teen",NA
+"438","R_3Rt5zbFTy1H44vV","1,4,6","pb_c_1","100","Second-order","Transgender Teen",NA
+"439","R_2pSJ3iuijDVbmGr","1,2,3,4,5,6,7","pb_c_1","67","Second-order","Transgender Teen","1"
+"440","R_QnbyYLMxeRmuFoJ","4,6","pb_c_1","100","Second-order","Transgender Teen",NA
+"441","R_2Ya0FB63BKvEM3y","1,2,3,4,5,7","pb_c_1","32","Second-order","Transgender Teen","1"
+"442","R_2frmckzQOuDyGti","1,4,6,7","pb_c_1","73","Second-order","Transgender Teen",NA
+"443","R_W1HvtAPGEQETMXv","1,3,4,5,7","pb_c_1","68","Second-order","Transgender Teen",NA
+"444","R_1dMELwPaPaOEZGm","1,2,4,6,7","pb_c_1","73","Second-order","Transgender Teen","1"
+"445","R_0xpFr5z4ZldcnFn","1,4,5,6","pb_c_1","69","Second-order","Transgender Teen",NA
+"446","R_SSGPRUNwb6H6F1f","6","pb_c_1","35","Second-order","Transgender Teen",NA
+"447","R_YVPSRSlxmAiHMPf",NA,"pb_c_1","35","Second-order","Transgender Teen",NA
+"448","R_AC0ay16jhD62nVn","4","pb_c_1","82","Second-order","Transgender Teen",NA

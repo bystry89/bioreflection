@@ -5,7 +5,7 @@ Piotr Bystranowski, Jon Rueda, & Ivar R. Hannikainen
 
 We initially drafted 14 normative and 16 factual statements regarding
 eleven controversial issues in contemporary bioethics (see Supplementary
-Table ??). We recruited a politically-balanced sample (N = 140) of U.K.
+Table ??). We recruited a politically-balanced sample of (N = 140) U.K.
 residents via Prolific. Each participant was presented with all 30
 statements in a randomized order and asked to report their agreement or
 disagreement using a slider. On the basis of this pretest, we selected
@@ -562,6 +562,18 @@ employing the following criteria:
     </tr>
     </tbody>
     </table>
+
+    Following that, we fitted a series of mixed-effect models on the
+    recoded data, with the random effect of particpant and issue. The
+    effect of participant identifying as right-wing or left-wing was
+    massive for factual statements (*β* = 6.76, *t*(134.0153908) = 4.15,
+    *p* = \< 0.001) and even larger for normative statements (*β* =
+    14.41, *t*(136.2904635) = 7.17, *p* = \< 0.001). Finally, it turned
+    out that normative statements are predicted by both the
+    corresponding factual statements (*β* = 0.63, *t*(1861.0559568) =
+    26.91, *p* = \< 0.001) and self-reported social political views
+    (single-item measure; *β* = 3, *t*(140.8392034) = 6.98, *p* = \<
+    0.001).
 
 ## Study 1a: Consequentialist Reflection
 

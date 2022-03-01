@@ -4,10 +4,10 @@ author: "Piotr Bystranowski, Jon Rueda, & Ivar R. Hannikainen"
 date: "2022-02-08"
 always_allow_html: true
 output: 
-  #github_document:
+  github_document:
 
-  pdf_document:
-    toc: yes
+  #pdf_document:
+  #  toc: yes
   # html_document:
   #   code_folding: hide
   #   df_print: kable
@@ -23,6 +23,11 @@ library(tidyverse)
 library(kableExtra)
 library(jtools)
 
+myround2 <- function(x, digits = 3){
+  if (x < 10^-digits) return(paste('<', 10^-digits))
+  paste('=', myround(x, digits))
+}
+
 knitr::opts_chunk$set(echo=FALSE, warning = F, message = F)
 ```
 
@@ -30,7 +35,7 @@ knitr::opts_chunk$set(echo=FALSE, warning = F, message = F)
 pretest <- read.csv("data/00_long_data.csv")
 ```
 
-We initially drafted 14 normative and 16 factual statements regarding eleven controversial issues in contemporary bioethics (see Supplementary Table ??). We recruited a politically-balanced sample (N = `r length(unique(pretest$PROLIFIC_PID))`) of U.K. residents via Prolific. Each participant was presented with all 30 statements in a randomized order and asked to report their agreement or disagreement using a slider. On the basis of this pretest, we selected pairs of normative/factual statements (one concerning the same issue), by applying three criteria: 
+We initially drafted 14 normative and 16 factual statements regarding eleven controversial issues in contemporary bioethics (see Supplementary Table ??). We recruited a politically-balanced sample of (N = `r length(unique(pretest$PROLIFIC_PID))`) U.K. residents via Prolific. Each participant was presented with all 30 statements in a randomized order and asked to report their agreement or disagreement using a slider. On the basis of this pretest, we selected pairs of normative/factual statements (one concerning the same issue), by applying three criteria: 
 
 1. the absolute value of the Pearson's correlation coefficient between responses regarding the normative and factual statements in a given pair exceeds .3;
 
@@ -73,8 +78,11 @@ tbl2 %>%
   column_spec(1, bold = T, italic = T) %>% 
   column_spec(2:3, italic = T) %>% 
   kable_paper()
-  
+
+source("src/00_regressions.R")
 ```
+Following that, we fitted a series of mixed-effect models on the recoded data, with the random effect of particpant and issue. The effect of participant identifying as right-wing or left-wing was massive for factual statements ($\beta$ = `r round(summ(m0_f)$coeftable[2,1], 2)`, *t*(`r summ(m0_f)$coeftable[2,4]`) = `r round(summ(m0_f)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_f)$coeftable[2,5], 3)`) and even larger for normative statements ($\beta$ = `r round(summ(m0_n)$coeftable[2,1], 2)`, *t*(`r summ(m0_n)$coeftable[2,4]`) = `r round(summ(m0_n)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_n)$coeftable[2,5], 3)`). Finally, it turned out that normative statements are predicted by both the corresponding factual statements ($\beta$ = `r round(summ(m0_pol)$coeftable[2,1], 2)`, *t*(`r summ(m0_pol)$coeftable[2,4]`) = `r round(summ(m0_pol)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_pol)$coeftable[2,5], 3)`) and self-reported social political views (single-item measure; $\beta$ = `r round(summ(m0_pol)$coeftable[3,1], 2)`, *t*(`r summ(m0_pol)$coeftable[3,4]`) = `r round(summ(m0_pol)$coeftable[3,3],2)`, *p* = `r myround2(summ(m0_pol)$coeftable[3,5], 3)`).
+
 
 ## Study 1a: Consequentialist Reflection
 ```{r load analysis 1, results='hide'}
