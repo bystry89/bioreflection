@@ -81,8 +81,13 @@ tbl2 %>%
 
 source("src/00_regressions.R")
 ```
-Following that, we fitted a series of mixed-effect models on the recoded data, with the random effect of particpant and issue. The effect of participant identifying as right-wing or left-wing was massive for factual statements ($\beta$ = `r round(summ(m0_f)$coeftable[2,1], 2)`, *t*(`r summ(m0_f)$coeftable[2,4]`) = `r round(summ(m0_f)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_f)$coeftable[2,5], 3)`) and even larger for normative statements ($\beta$ = `r round(summ(m0_n)$coeftable[2,1], 2)`, *t*(`r summ(m0_n)$coeftable[2,4]`) = `r round(summ(m0_n)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_n)$coeftable[2,5], 3)`). Finally, it turned out that normative statements are predicted by both the corresponding factual statements ($\beta$ = `r round(summ(m0_pol)$coeftable[2,1], 2)`, *t*(`r summ(m0_pol)$coeftable[2,4]`) = `r round(summ(m0_pol)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_pol)$coeftable[2,5], 3)`) and self-reported social political views (single-item measure; $\beta$ = `r round(summ(m0_pol)$coeftable[3,1], 2)`, *t*(`r summ(m0_pol)$coeftable[3,4]`) = `r round(summ(m0_pol)$coeftable[3,3],2)`, *p* = `r myround2(summ(m0_pol)$coeftable[3,5], 3)`).
+Following that, we fitted a series of mixed-effect models on the recoded data, with the random effect of participant and issue. The effect of participant identifying as right-wing or left-wing was massive for factual statements ($\beta$ = `r round(summ(m0_f)$coeftable[2,1], 2)`, *t*(`r round(summ(m0_f)$coeftable[2,4])`) = `r round(summ(m0_f)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_f)$coeftable[2,5], 3)`) and even larger for normative statements ($\beta$ = `r round(summ(m0_n)$coeftable[2,1], 2)`, *t*(`r round(summ(m0_n)$coeftable[2,4])`) = `r round(summ(m0_n)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_n)$coeftable[2,5], 3)`). Finally, it turned out that normative statements are predicted by both the corresponding factual statements ($\beta$ = `r round(summ(m0_pol)$coeftable[2,1], 2)`, *t*(`r round(summ(m0_pol)$coeftable[2,4])`) = `r round(summ(m0_pol)$coeftable[2,3],2)`, *p* = `r myround2(summ(m0_pol)$coeftable[2,5], 3)`) and self-reported social political views (single-item measure; $\beta$ = `r round(summ(m0_pol)$coeftable[3,1], 2)`, *t*(`r round(summ(m0_pol)$coeftable[3,4])`) = `r round(summ(m0_pol)$coeftable[3,3],2)`, *p* = `r myround2(summ(m0_pol)$coeftable[3,5], 3)`).
 
+```{r}
+source("src/03_analysis.R")
+```
+
+Having selected the 7 items, we collected data on the respective factual beliefs of the expert community by soliciting responses from `r length(unique(ex$ResponseId))` leading bioethicists.
 
 ## Study 1a: Consequentialist Reflection
 ```{r load analysis 1, results='hide'}

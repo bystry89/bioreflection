@@ -36,6 +36,8 @@ pretest <- pretest %>% mutate(
   resp = if_else(str_detect(key, "ab_f|gm_f|sa_f"),
                  abs(100-as.numeric(resp)), as.numeric(resp)))
 
+
+pretest %>% filter(grepl(paste(selected_keys,collapse="|"), .$key)) %>% write.csv("data/00_filt_data.csv")
 # reliability
 reliability <- pretest %>% 
   filter(type=='Normative', grepl(paste(selected_keys,collapse="|"), .$key)) %>% 
@@ -69,3 +71,17 @@ norm2_EFA <- psych::fa(norm, nfactors = 2, rotate='oblimin')
 norm2_EFA$loadings
 norm2_EFA$e.values
 norm2_EFA$score.cor
+
+pretest %>%  filter(type=='Normative', grepl(paste(selected_keys,collapse="|"), .$key)) %>% 
+  #group_by(issue, type) %>% 
+  dplyr::summarise(cor=cor(politics_1, resp, use='pairwise.complete.obs'))
+
+pretest %>%  filter(type=='Factual', grepl(paste(selected_keys,collapse="|"), .$key)) %>% 
+  #group_by(issue, type) %>% 
+  dplyr::summarise(cor=cor(politics_1, resp, use='pairwise.complete.obs'))
+
+pretest %>% filter(grepl(paste(selected_keys,collapse="|"), .$key)) %>%
+  select(issue, type, resp, PROLIFIC_PID) %>% 
+  spread(type, resp) %>% 
+  #group_by(issue) %>%
+  dplyr::summarise(cor=cor(Factual, Normative, use="pairwise.complete.obs"))
