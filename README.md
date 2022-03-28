@@ -564,16 +564,25 @@ employing the following criteria:
     </table>
 
     Following that, we fitted a series of mixed-effect models on the
-    recoded data, with the random effect of particpant and issue. The
+    recoded data, with the random effect of participant and issue. The
     effect of participant identifying as right-wing or left-wing was
-    massive for factual statements (*β* = 6.76, *t*(134.0153908) = 4.15,
-    *p* = \< 0.001) and even larger for normative statements (*β* =
-    14.41, *t*(136.2904635) = 7.17, *p* = \< 0.001). Finally, it turned
-    out that normative statements are predicted by both the
-    corresponding factual statements (*β* = 0.63, *t*(1861.0559568) =
-    26.91, *p* = \< 0.001) and self-reported social political views
-    (single-item measure; *β* = 3, *t*(140.8392034) = 6.98, *p* = \<
-    0.001).
+    massive for factual statements
+    (![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
+    = 6.76, *t*(134) = 4.15, *p* = \< 0.001) and even larger for
+    normative statements
+    (![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
+    = 14.41, *t*(136) = 7.17, *p* = \< 0.001). Finally, it turned out
+    that normative statements are predicted by both the corresponding
+    factual statements
+    (![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
+    = 0.63, *t*(1861) = 26.91, *p* = \< 0.001) and self-reported social
+    political views (single-item measure;
+    ![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
+    = 3, *t*(141) = 6.98, *p* = \< 0.001).
+
+Having selected the 7 items, we collected data on the respective factual
+beliefs of the expert community by soliciting responses from 0 leading
+bioethicists.
 
 ## Study 1a: Consequentialist Reflection
 
@@ -656,25 +665,31 @@ session 1 (so that a positive difference would indicate a shift in the
 conservative direction on the social political scale). Then, we fitted a
 series of mixed-effect models with the said difference as the dependent
 measure and random effects of participant’s id and issue. An
-intercept-only model revealed a non-significant negative intercept (*β*
+intercept-only model revealed a non-significant negative intercept
+(![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
 = -0.03, *t*(999) = -1.58, *p* = 0.11). Thus, we didn’t observe evidence
 that reflecting on one issue would lead to a consistent shift in
 normative opinions on all 7 issues. However, adding the effect of
 reflection (i.e, a binary variable indicating whether a given issue was
 the reflection topic or merely one of 6 filler issues for a given
-participant) improved the models fit (*χ*<sup>2</sup>(1) = 5.54), *p* =
-0.019), thus suggesting that reflecting on the factual dimension of a
-given issue would move the normative opinions on that issue in the
-direction of political progressivism (*β* = -0.14, *t*(998) = -2.35, *p*
-= 0.019).
+participant) improved the models fit
+(![\\chi^2](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cchi%5E2 "\chi^2")(1)
+= 5.54), *p* = 0.019), thus suggesting that reflecting on the factual
+dimension of a given issue would move the normative opinions on that
+issue in the direction of political progressivism
+(![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
+= -0.14, *t*(998) = -2.35, *p* = 0.019).
 
 In the second set of analyses, the dependent measure was the change in
 the normalized distance from the median (with a positive score
 indicating enhanced polarization). Again, we fitted a series of
 mixed-effect models, with an intercept-only model providing some
 inconclusive evidence of the moderating effect of reflection across the
-seven issues (*β* = -0.03, *t*(145) = -1.76, *p* = 0.08). As adding the
-effect of reflection didn’t improve the model’s fit (*χ*<sup>2</sup>(1)
+seven issues
+(![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
+= -0.03, *t*(145) = -1.76, *p* = 0.08). As adding the effect of
+reflection didn’t improve the model’s fit
+(![\\chi^2](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cchi%5E2 "\chi^2")(1)
 = 0.2), *p* = 0.66), the putative moderating effect of reflection
 doesn’t seem to be enhanced by focusing on the target issue.
 
@@ -684,7 +699,7 @@ doesn’t seem to be enhanced by focusing on the target issue.
 study (Age = 38 years; 91 women; 60 participants declared right-wing
 political views).
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ### Results
 
@@ -693,18 +708,23 @@ first, we fitted a series of mixed-effect models with the difference
 between normalized assessments of factual statement in the second and
 first series as the dependent measure and random effects of
 participant’s id and issue. An intercept-only model revealed a
-non-significant negative intercept (*β* = -0.03, *t*(6) = -1.39, *p* =
-0.21) and the mode’s fit wasn’t improved by adding the effect of target
-issue (*χ*<sup>2</sup>(1) = 0.44), *p* = 0.508), meaning that we didn’t
-observe evidence that thinking about the normative dimension of one
-issue would lead to a consistent shift in factual beliefs on all 7
-issues, nor a shift in specific factual beliefs on the target issue.
+non-significant negative intercept
+(![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
+= -0.03, *t*(6) = -1.39, *p* = 0.21) and the mode’s fit wasn’t improved
+by adding the effect of target issue
+(![\\chi^2](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cchi%5E2 "\chi^2")(1)
+= 0.44), *p* = 0.508), meaning that we didn’t observe evidence that
+thinking about the normative dimension of one issue would lead to a
+consistent shift in factual beliefs on all 7 issues, nor a shift in
+specific factual beliefs on the target issue.
 
 In the second set of analyses, the dependent measure was the change in
 the normalized distance from the median. The intercept-only model
 suggests an overall moderating effect of thinking about the normative
-dimension of one issue on factual beliefs on all 7 issues (*β* = -0.04,
-*t*(141) = -2.07, *p* = 0.04). As adding the effect of reflection didn’t
-improve the model’s fit (*χ*<sup>2</sup>(1) = 0.07), *p* = 0.8), the
-moderating effect of reflection doesn’t seem to be enhanced by focusing
-on the target issue.
+dimension of one issue on factual beliefs on all 7 issues
+(![\\beta](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta "\beta")
+= -0.04, *t*(141) = -2.07, *p* = 0.04). As adding the effect of
+reflection didn’t improve the model’s fit
+(![\\chi^2](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cchi%5E2 "\chi^2")(1)
+= 0.07), *p* = 0.8), the moderating effect of reflection doesn’t seem to
+be enhanced by focusing on the target issue.

@@ -55,10 +55,10 @@ pretest %>%
   left_join(select(pretest,PROLIFIC_PID, issue, politics_1)) %>% 
   lmer(Normative ~ Factual + politics_1 + (1 | issue) + (1 | PROLIFIC_PID), data = .) %>% jtools::summ()
 
-pretest %>% 
-  filter(type == "Factual") %>% 
-  bind_rows(expert) %>% 
-  ggplot(aes(x=resp))+
-  geom_density()+
-  facet_grid(sample~issue)
+# pretest %>% 
+#   filter(type == "Factual") %>% 
+#   bind_rows(expert) %>% 
+#   ggplot(aes(x=resp))+
+#   geom_density()+
+#   facet_grid(sample~issue)
 

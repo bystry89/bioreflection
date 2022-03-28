@@ -40,7 +40,7 @@ fig_ref <- devs %>% filter(type=="Normative") %>% ggplot()+
   theme_minimal() +
   xlab("Mean attitude shift")+
   ylab("Change in polarization")+
-  ylim(-5,5)+xlim(-10, 10)
+  ylim(-12,12)+xlim(-12, 10)
 
 fig_rat <- devs %>% filter(type=="Factual") %>% ggplot()+
   geom_point(aes(x=resp, y=absdev, color=issue, shape=reflect), 

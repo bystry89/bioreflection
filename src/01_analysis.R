@@ -28,6 +28,11 @@ bf_norm <- data.frame()
 #     
 #   }}
 
+study1 %>% filter(reflect == "Reflected", type=="Normative", order=='First-order') %>% 
+  lmer(resp2 ~ resp + reflection_resp_O1  + (1 | issue), data = .) %>% 
+  summary()
+
+
 longer <- study1 %>% dplyr::select(PROLIFIC_PID, key, resp, resp2) %>% 
   gather(-PROLIFIC_PID, -key, key='time', value='Resp') %>% 
   left_join(dplyr::select(
@@ -41,6 +46,8 @@ s1_scaled <-  longer %>%
   mutate(z_resp=scale_this(Resp)) %>% select(-Resp) %>% 
   spread(time, z_resp) %>% 
   mutate(diff=resp2-resp)
+
+s1_scaled
 
 m1_ref_0 <- s1_scaled %>% 
   filter(type=='Normative') %>% 
