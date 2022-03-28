@@ -28,5 +28,21 @@ pretest_exp <- ex %>%
   filter(order == "First-order") %>% 
   bind_rows(filter(pretest, type == "Factual"))
 
-lmer(resp ~ sample + (1 | issue) + (1 | PROLIFIC_PID), data = pretest_exp) %>% 
-  jtools::summ()
+m3_dv <- lmer(resp ~ sample + (1 | issue) + (1 | PROLIFIC_PID), data = pretest_exp) 
+
+s1_devs <- pretest_exp %>% 
+  filter(!is.na(resp)) %>% 
+  group_by(sample, issue) %>% 
+  dplyr::summarize(median=median(resp), sd=sd(resp)) %>% 
+  right_join(pretest_exp, by=c('sample', 'issue')) %>% 
+  select(PROLIFIC_PID, order, issue, resp, median, sd, sample) %>% 
+  mutate(absdev = abs(resp-median)/sd)
+
+m3_dev <- lmer(absdev ~ sample + (1 | issue) + (1 | PROLIFIC_PID), data = s1_devs)
+
+exp_per_issue <- function(x) {
+  pretest_exp %>% 
+    filter(issue == x) %>% 
+    t.test(resp ~ sample, data = .)
+}
+        

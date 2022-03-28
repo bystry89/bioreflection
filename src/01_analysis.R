@@ -41,13 +41,11 @@ longer <- study1 %>% dplyr::select(PROLIFIC_PID, key, resp, resp2) %>%
 
 s1_scaled <-  longer %>% 
   filter(order=='First-order') %>% 
-  select(issue, type, Resp, PROLIFIC_PID,time, reflect) %>% 
+  select(issue, type, Resp, PROLIFIC_PID,time, reflect, RL) %>% 
   group_by(issue, type) %>%
   mutate(z_resp=scale_this(Resp)) %>% select(-Resp) %>% 
   spread(time, z_resp) %>% 
   mutate(diff=resp2-resp)
-
-s1_scaled
 
 m1_ref_0 <- s1_scaled %>% 
   filter(type=='Normative') %>% 
@@ -64,6 +62,27 @@ m1_rat_0 <- s1_scaled %>%
 m1_rat_1 <- s1_scaled %>% 
   filter(type=='Factual') %>% 
   lmer(diff ~ reflect + (1 | PROLIFIC_PID) + (1 | issue), data = .)
+
+m1_ref_4 <- study1 %>% 
+  filter(order=="First-order", reflect == "Reflected") %>% 
+  group_by(issue, type) %>% 
+  mutate(z_reflected=scale_this(reflection_resp_O1)) %>%
+  select(PROLIFIC_PID, key, z_reflected) %>% 
+  left_join(s1_scaled) %>% 
+  filter(type == "Normative") %>% 
+  lmer(resp2 ~ resp + z_reflected + (1 | issue), data = .)
+
+m1_rat_4 <- study1 %>% 
+  filter(order=="First-order", reflect == "Reflected") %>% 
+  group_by(issue, type) %>% 
+  mutate(z_reflected=scale_this(reflection_resp_O1)) %>%
+  select(PROLIFIC_PID, key, z_reflected) %>% 
+  left_join(s1_scaled) %>% 
+  filter(type == "Factual") %>% 
+  lmer(resp2 ~ resp + z_reflected + (1 | issue), data = .)
+
+
+  
 
 s1_devs <- longer %>% 
   filter(order=='First-order') %>% 
