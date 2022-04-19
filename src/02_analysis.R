@@ -149,3 +149,28 @@ m2_f_dev <- s2_devs %>%
   pivot_longer(cols=c(absdev1:absdev2), names_to = "time", values_to = "abs_dev") %>% 
   filter(type == "Factual", reflect == "Target issue", order == "First-order") %>% 
   lmer(abs_dev ~ time + (1 | issue), data = .)
+
+
+longer %>% filter(order=="First-order") %>% pivot_wider(id_cols = c(PROLIFIC_PID, time, issue, reflect), names_from = type, values_from = Resp) %>% 
+  lmer(Normative ~ Factual*time + (1 | PROLIFIC_PID) + (1 | issue), data = .) %>% 
+  summary()
+
+s2_scaled %>% 
+  #filter(order=="First-order") %>% 
+  pivot_wider(id_cols = c(PROLIFIC_PID, issue, reflect), names_from = type, values_from = c(resp, resp2)) %>% 
+  #pivot_wider(id_cols = c(PROLIFIC_PID, issue, reflect), names_from = time, values_from = c(Factual, Normative))
+  mutate(fact = abs(resp2_Factual - resp_Factual), norm = abs(resp2_Normative - resp_Normative)) %>% 
+  pivot_longer(cols = c(fact, norm), values_to = "abs_shift", names_to = "type") %>% 
+  lmer(abs_shift ~ type + (1 | PROLIFIC_PID) + (1 | issue), data = .) %>% 
+  summary()
+
+
+longer %>% 
+  filter(order=="First-order") %>% 
+  pivot_wider(id_cols = c(PROLIFIC_PID, issue, reflect, time), names_from = type, values_from = Resp) %>% 
+  pivot_wider(id_cols = c(PROLIFIC_PID, issue, reflect), names_from = time, values_from = c(Factual, Normative)) %>% 
+  #mutate(fact = abs(resp2_Factual - resp_Factual), norm = abs(resp2_Normative - resp_Normative)) %>% 
+  mutate(fact = abs(Factual_resp - Factual_resp2), norm = abs(Normative_resp - Normative_resp2)) %>% 
+  pivot_longer(cols = c(fact, norm), values_to = "abs_shift", names_to = "type") %>% 
+  lmer(abs_shift ~ type + (1 | PROLIFIC_PID) + (1 | issue), data = .) %>% 
+  summary()
