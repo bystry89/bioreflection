@@ -47,6 +47,8 @@ s1_scaled <-  longer %>%
   spread(time, z_resp) %>% 
   mutate(diff=resp2-resp)
 
+
+## reflection models
 m1_ref_0 <- s1_scaled %>% 
   filter(type=='Normative') %>% 
   lmer(diff ~ 1 + (1 | PROLIFIC_PID) + (1 | issue), data = .) 
@@ -72,28 +74,24 @@ m1_ref_4 <- study1 %>%
   filter(type == "Normative") %>% 
   lmer(resp2 ~ resp + z_reflected + (1 | issue), data = .)
 
-m1_rat_4 <- study1 %>% 
-  filter(order=="First-order", reflect == "Reflected") %>% 
-  group_by(issue, type) %>% 
-  mutate(z_reflected=scale_this(reflection_resp_O1)) %>%
-  select(PROLIFIC_PID, key, z_reflected) %>% 
-  left_join(s1_scaled) %>% 
-  filter(type == "Factual") %>% 
-  lmer(resp2 ~ resp + z_reflected + (1 | issue), data = .)
+# m1_rat_4 <- study1 %>% 
+#   filter(order=="First-order", reflect == "Reflected") %>% 
+#   group_by(issue, type) %>% 
+#   mutate(z_reflected=scale_this(reflection_resp_O1)) %>%
+#   select(PROLIFIC_PID, key, z_reflected) %>% 
+#   left_join(s1_scaled) %>% 
+#   filter(type == "Factual") %>% 
+#   lmer(resp2 ~ resp + z_reflected + (1 | issue), data = .)
 
 
   
 
-s1_devs <- longer %>% 
-  filter(order=='First-order') %>% 
-  group_by(type, issue) %>% 
-  dplyr::summarize(median=median(Resp), sd=sd(Resp)) %>% 
-  right_join(longer, by=c('type', 'issue')) %>% 
-  select(PROLIFIC_PID, order, type, issue, Resp, median, sd, time, reflect, RL) %>% 
-  spread(time, Resp) %>% 
-  mutate(absdev1 = abs(resp-median)/sd,
-         absdev2 = abs(resp2-median)/sd,
-         diff_absdebv=absdev2-absdev1)
+s1_devs <-
+  s1_scaled %>% 
+  mutate(absdev1 = abs(resp),
+        absdev2 = abs(resp2),
+        diff_absdebv=absdev2-absdev1)
+
 
 m1_ref_2 <- s1_devs %>% 
   filter(type=='Normative') %>% 
@@ -134,3 +132,13 @@ m1_rat_3 <- s1_devs %>%
 #   filter(type == "Factual") %>% 
 #   lmer(diff ~ reflect + (1 | PROLIFIC_PID) + (1 | issue), data = .) %>% 
 #   summ()
+
+m1_ref_4 <- s1_scaled %>% 
+  filter(reflect == "Reflected") %>% 
+  left_join(filter(study1, order == "First-order"), by = c("issue", "type", "PROLIFIC_PID", "reflect", "RL")) %>% 
+  filter(type == "Normative") %>% 
+  group_by(issue) %>% 
+  mutate(reflect_fact = scale_this(reflection_resp_O1)) %>% 
+  pivot_longer(cols=c(resp.x, resp2.x), names_to = "time", values_to = "resp") %>% 
+  lmer(resp ~ reflect_fact*time + (1 | issue) + (1 | PROLIFIC_PID), data=.) 
+

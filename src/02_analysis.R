@@ -25,7 +25,8 @@ study2$reflect <- if_else(study2$issue == study2$reflection_topic,
 
 #stacked set--DV
 longer <- study2 %>% dplyr::select(PROLIFIC_PID, key, resp, resp2) %>% 
-  gather(-PROLIFIC_PID, -key, key='time', value='Resp') %>% left_join(dplyr::select(
+  gather(-PROLIFIC_PID, -key, key='time', value='Resp') %>% 
+  left_join(dplyr::select(
     study2, -resp, -resp2
   ), by=c('PROLIFIC_PID', 'key'))
 
@@ -44,40 +45,30 @@ s2_scaled <-  longer %>%
 #   group_by(issue, type) %>%
 #   mutate(z_resp=scale_this(Resp)) 
 
-# calculate delta_f for each layperson/issue
-fact_shift <- s2_scaled %>%ungroup() %>% filter(type == "Factual") %>% 
-  # filter(
-  # #sample=='lay', 
-  # type=='Factual') %>% select(PROLIFIC_PID, issue, time, z_resp) %>% 
-  # spread(time, z_resp) %>%select(PROLIFIC_PID, issue, resp, resp2) %>%
-  # mutate(delta_f=resp2-resp) %>% 
-  select(PROLIFIC_PID, issue, diff) 
-
 # wide format for normative target statements
-normal_n <- s2_scaled %>%  
-  #pivot_longer(cols=c(resp, resp2), names_to = "time") %>% 
-  filter(
-    #sample=='lay', 
-    type=='Normative', reflect=='Target issue') %>% 
-  select(PROLIFIC_PID, type, issue, resp, resp2) %>% 
-   left_join(fact_shift, by=c('PROLIFIC_PID', 'issue'))
+wider <- s2_scaled %>% 
+  pivot_wider(id_cols = c(issue, PROLIFIC_PID, reflect), 
+              names_from = type, 
+              values_from = c(resp, resp2, diff)) 
 
 # normative shift model -- without random slope
-m2_norm_shift <- normal_n %>% 
-  lmer(resp2~resp+diff + (1|issue), data=.) 
+m2_norm_shift <- wider %>% 
+  filter(reflect == "Target issue") %>% 
+  lmer(resp2_Normative ~ resp_Normative + diff_Factual + (1|issue), data=.) 
+
 
 # normative shift model -- without random slope; per issue
 normative_coef=data.frame()
-for (i in levels(as.factor(normal_n$issue)))  {
-  estimate=normal_n%>% filter(issue==i) %>% 
-    lm(resp2~resp+diff, data=.) %>% summary() %>%broom::tidy()
+for (i in levels(as.factor(wider$issue)))  {
+  estimate=wider%>% filter(issue==i, reflect == "Target issue") %>% 
+    lm(resp2_Normative ~ resp_Normative + diff_Factual, data=.) %>% summary() %>%broom::tidy()
   normative_coef=bind_rows(normative_coef,data.frame(issue=i, prior=estimate$estimate[2], pvalue1=estimate$p.value[2],factual_shift=estimate$estimate[3], pvalue2=estimate$p.value[3]))
 }
 #normative_coef
 
 # normative shift model -- with random slope
-m2_norm_rs <- normal_n %>% 
-  lmer(resp2~resp+diff + (1+diff|issue), data=.) %>% summary()
+m2_norm_rs <- wider %>% filter(reflect == "Target issue") %>% 
+  lmer(resp2_Normative ~ resp_Normative + diff_Factual + (1 + diff_Factual|issue), data=.) 
 
 # does the correlation with politics decrease following reflection? not really
 # study2 %>% filter(order=='First-order', type=='Normative', reflect=='Target issue') %>% group_by(issue, type) %>% 
@@ -117,15 +108,9 @@ m2_ref_1 <- s2_scaled %>%
   lmer(diff ~ reflect + (1 | PROLIFIC_PID) + (1 | issue), data = .)
 
 
-s2_devs <- longer %>% 
-  filter(order=='First-order') %>% 
-  group_by(type, issue) %>% 
-  dplyr::summarize(median=median(Resp), sd=sd(Resp)) %>% 
-  right_join(longer, by=c('type', 'issue')) %>% 
-  select(PROLIFIC_PID, order, type, issue, Resp, median, sd, time, reflect, RL) %>% 
-  spread(time, Resp) %>% 
-  mutate(absdev1 = abs(resp-median)/sd,
-         absdev2 = abs(resp2-median)/sd,
+s2_devs <- s2_scaled %>% 
+  mutate(absdev1 = abs(resp),
+         absdev2 = abs(resp2),
          diff_absdebv=absdev2-absdev1)
 
 m2_ref_2 <- s2_devs %>% 
@@ -147,30 +132,35 @@ m1_rat_3 <- s2_devs %>%
 
 m2_f_dev <- s2_devs %>% 
   pivot_longer(cols=c(absdev1:absdev2), names_to = "time", values_to = "abs_dev") %>% 
-  filter(type == "Factual", reflect == "Target issue", order == "First-order") %>% 
+  filter(type == "Factual", reflect == "Target issue") %>% 
   lmer(abs_dev ~ time + (1 | issue), data = .)
 
+m2_n_dev <- s2_devs %>% 
+  pivot_longer(cols=c(absdev1:absdev2), names_to = "time", values_to = "abs_dev") %>% 
+  filter(type == "Normative", reflect == "Target issue") %>% 
+  lmer(abs_dev ~ time + (1 | issue), data = .)
 
-longer %>% filter(order=="First-order") %>% pivot_wider(id_cols = c(PROLIFIC_PID, time, issue, reflect), names_from = type, values_from = Resp) %>% 
-  lmer(Normative ~ Factual*time + (1 | PROLIFIC_PID) + (1 | issue), data = .) %>% 
-  summary()
+# Factual more preditive of Normative in T2
+m2_aut <- s2_scaled %>% 
+  pivot_longer(cols = c(resp, resp2), names_to = "time", values_to = "Resp") %>% 
+  pivot_wider(id_cols = c(PROLIFIC_PID, time, issue, reflect), names_from = type, values_from = Resp) %>% 
+  lmer(Normative ~ Factual*time + (1 | PROLIFIC_PID) + (1 | issue), data = .)
+
+m2_aut2 <- s2_scaled %>% 
+  pivot_longer(cols = c(resp, resp2), names_to = "time", values_to = "Resp") %>% 
+  pivot_wider(id_cols = c(PROLIFIC_PID, time, issue, reflect), names_from = type, values_from = Resp) %>% 
+  lmer(Normative ~ Factual*time*reflect + (1 | PROLIFIC_PID) + (1 | issue), data = .)
 
 s2_scaled %>% 
-  #filter(order=="First-order") %>% 
   pivot_wider(id_cols = c(PROLIFIC_PID, issue, reflect), names_from = type, values_from = c(resp, resp2)) %>% 
-  #pivot_wider(id_cols = c(PROLIFIC_PID, issue, reflect), names_from = time, values_from = c(Factual, Normative))
   mutate(fact = abs(resp2_Factual - resp_Factual), norm = abs(resp2_Normative - resp_Normative)) %>% 
   pivot_longer(cols = c(fact, norm), values_to = "abs_shift", names_to = "type") %>% 
   lmer(abs_shift ~ type + (1 | PROLIFIC_PID) + (1 | issue), data = .) %>% 
   summary()
 
 
-longer %>% 
-  filter(order=="First-order") %>% 
-  pivot_wider(id_cols = c(PROLIFIC_PID, issue, reflect, time), names_from = type, values_from = Resp) %>% 
-  pivot_wider(id_cols = c(PROLIFIC_PID, issue, reflect), names_from = time, values_from = c(Factual, Normative)) %>% 
-  #mutate(fact = abs(resp2_Factual - resp_Factual), norm = abs(resp2_Normative - resp_Normative)) %>% 
-  mutate(fact = abs(Factual_resp - Factual_resp2), norm = abs(Normative_resp - Normative_resp2)) %>% 
-  pivot_longer(cols = c(fact, norm), values_to = "abs_shift", names_to = "type") %>% 
-  lmer(abs_shift ~ type + (1 | PROLIFIC_PID) + (1 | issue), data = .) %>% 
+s2_scaled %>% 
+  filter(type == "Normative") %>% 
+  mutate(abs_diff = abs(diff)) %>% 
+  lmer(abs_diff ~ resp + (1 | PROLIFIC_PID) + (1 | issue), data = .) %>% 
   summary()

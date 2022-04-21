@@ -3,35 +3,35 @@ library(tidyverse)
 
 
 source("src/functions/polit_recode.R")
-longer <- read.csv("data/01_long_data.csv") %>% 
+longer <- read.csv("data/01_long_data.csv") %>%
   mutate(reflect = if_else(
     issue == reflection_topic, "Reflected", "Unreflected"
-  )) %>% 
-  polit_recode() %>% 
-  gather('time', 'Resp', -c(1:3, 5:14, 16:21))
+  )) %>%
+  polit_recode() %>%
+  #gather('time', 'Resp', -c(1:3, 5:14, 16:21))
+
+dplyr::select(PROLIFIC_PID, key, resp, resp2) %>% 
+  gather(-PROLIFIC_PID, -key, key='time', value='Resp') %>% 
+  left_join(dplyr::select(
+    study1, -resp, -resp2
+  ), by=c('PROLIFIC_PID', 'key'))  %>%  filter(order=='First-order') %>% 
+  select(issue, type, Resp, PROLIFIC_PID,time, reflect, RL) %>% 
+  group_by(issue, type) %>%
+  mutate(z_resp=scale_this(Resp)) %>% select(-Resp) %>% 
+  spread(time, z_resp) %>% 
+  mutate(diff=resp2-resp)
 
 devs <- 
   longer %>% 
-  filter(order=='First-order') %>% 
-  group_by(type, issue) %>% 
-  dplyr::summarize(median=median(Resp)) %>% 
-  right_join(filter(longer, order=='First-order'), by=c('type', 'issue')) %>% 
-  select(PROLIFIC_PID, order, type, issue, Resp, median, time, reflect, RL) %>% 
-  spread(time, Resp) %>% 
-  mutate(absdev1 = abs(resp-median),
-         absdev2 = abs(resp2-median),
+  mutate(absdev1 = abs(resp),
+         absdev2 = abs(resp2),
          diff_absdebv=absdev2-absdev1) %>% 
   group_by(reflect, issue, type) %>% 
-  #summarize(resp=mean(resp), resp2=mean(resp2), absdev1=mean(absdev1)
-  #          , absdev2=mean(absdev2)) %>% 
   summarize(resp=mean(resp2)-mean(resp), 
             absdev=mean(absdev2)-mean(absdev1)) %>% 
   mutate(reflect=recode(reflect, '1'="Reflected", '0'='Unreflected'))
 
 fig_ref <- devs %>% filter(type=="Normative") %>% ggplot()+
-  #geom_segment(aes(x=resp, xend=resp2, y=absdev1, yend=absdev2, color=issue),
-  #              arrow=arrow(angle=15, length = unit(0.10, "inches")))+
-  #facet_wrap(reflect~type)+
   geom_point(aes(x=resp, y=absdev, color=issue, shape=reflect), 
              size=4, stroke=1)+
   geom_vline(xintercept = 0, linetype='dashed')+
@@ -40,7 +40,7 @@ fig_ref <- devs %>% filter(type=="Normative") %>% ggplot()+
   theme_minimal() +
   xlab("Mean attitude shift")+
   ylab("Change in polarization")+
-  ylim(-12,12)+xlim(-12, 10)
+  ylim(-0.2,0.2)+xlim(-0.4, 0.4)
 
 fig_rat <- devs %>% filter(type=="Factual") %>% ggplot()+
   geom_point(aes(x=resp, y=absdev, color=issue, shape=reflect), 
@@ -51,7 +51,7 @@ fig_rat <- devs %>% filter(type=="Factual") %>% ggplot()+
   theme_minimal() +
   xlab("Mean attitude shift")+
   ylab("Change in polarization")+
-  ylim(-5,5)+xlim(-10, 10)
+  ylim(-0.2,0.2)+xlim(-0.4, 0.4)
   
   
   
